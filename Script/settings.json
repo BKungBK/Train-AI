@@ -1,0 +1,30 @@
+{
+    "dataset_path": "C:/Train AI/dataset_split",
+    "class_file": "C:/Train AI/classes.txt",
+    "fast_mode": false,
+    "appearance_mode": "Dark",
+    "font": [
+        "Tahoma",
+        12
+    ],
+    "button_fg_color": "#F67280",
+    "button_hover_color": "#F8B195",
+    "button_border_color": "#F67280",
+    "button_text_color": "#FFECDB",
+    "label_text_color": "#FFECDB",
+    "entry_fg_color": "#C06C84",
+    "entry_text_color": "#FFECDB",
+    "progress_fg_color": "#522258",
+    "progress_border_color": "#FFFFFF",
+    "progress_progress_color": "#D95F59",
+    "task": "detect",
+    "mode": "train",
+    "epochs": 200,
+    "imgsz": 416,
+    "batch_size": 16,
+    "verbose": true,
+    "device": "cpu",
+    "lr0": 0.01,
+    "lrf": 0.1,
+    "lr_scheduler": "cosine"
+}

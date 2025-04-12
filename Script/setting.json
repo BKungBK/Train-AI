@@ -1,0 +1,76 @@
+{
+    "background_color": "#AB93C9",
+    "button_color": "#D698B9",
+    "active_button_color": "#FFBEA3",
+    "font": "Tahoma",
+    "label_colors": {
+        "default": "lime",
+        "crop_confirm": "white",
+        "PlasticBottle": "#FF5733",
+        "GlassBottle": "#33FF57",
+        "MetalCan": "#3357FF",
+        "PlasticCup": "#2798c2",
+        "OtherPlastic": "#5c3a6f",
+        "PlasticBottleCap": "#cc0f70",
+        "Straw": "#a60c70",
+        "Can": "#7be405",
+        "MilkBox": "#7bf413",
+        "PlasticBag": "#ff70e6",
+        "RopeNets": "#3072f2",
+        "FireLighter": "#a7938d",
+        "Foam": "#e316ce",
+        "Fabric": "#24edf2",
+        "Sponge": "#e6dd70",
+        "Pawhiteper": "#e11ded",
+        "Metal": "#85d788",
+        "PlasticSpoon": "#c6eb07",
+        "Rubber": "#22c90f",
+        "CigaretteButt": "#c628d9",
+        "NaturalWood": "#cfbeb8",
+        "Shrimp": "#e62e35",
+        "Shell": "#1e0bf9",
+        "Crab": "#61d297",
+        "Fish": "#906f76",
+        "Coral": "#3b1d9d",
+        "Seaweed": "#9451e9",
+        "Jellyfish": "#19ac85",
+        "Other": "#10d262",
+        "Paper": "#a03c0d"
+    },
+    "shortcuts": {
+        "confirm_crop": [
+            "space"
+        ],
+        "confirm_label": [
+            "s"
+        ],
+        "cancel_crop": [
+            "Escape"
+        ],
+        "remove_all_labels": [
+            "Delete"
+        ],
+        "remove_oldest_label": [
+            "p"
+        ],
+        "remove_newest_label": [
+            "n"
+        ],
+        "cycle_label": [
+            "w"
+        ],
+        "next_image": [
+            "Right",
+            "Down",
+            "d"
+        ],
+        "prev_image": [
+            "Left",
+            "Up",
+            "a"
+        ],
+        "quit": [
+            "q"
+        ]
+    }
+}
