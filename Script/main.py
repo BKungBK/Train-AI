@@ -355,17 +355,16 @@ class YOLOTrainerGUI(ctk.CTk):
             create_data_yaml(output_dir, self.class_file.get(), yaml_path)
 
             # Step 3: Train YOLO
-            # self.log_text.set("(\ _ /) \n(˶• ༝ •˶)  \n( > \"ขั้นตอนที่ 3: ฝึกโมเดล YOLO...\"")
-            # if self.fast_mode.get():
-            #     model = train_yolo(yaml_path, epochs=1, batch_size=1)
-            #     self.log_text.set("(\ _ /) \n(˶• ༝ •˶)  \n( > \"โหมดฝึกแบบเร็ว: ฝึกเสร็จแล้ว!\"")
-            # else:
-            #     model = train_yolo(yaml_path, epochs=500, batch_size=4)  # ปรับ batch_size ให้เหมาะสมสำหรับ VRAM 8GB
-            #     self.log_text.set("(\ _ /) \n(˶• ༝ •˶)  \n( > \"ฝึกเสร็จแล้ว!\"")
+            self.log_text.set("(\ _ /) \n(˶• ༝ •˶)  \n( > \"ขั้นตอนที่ 3: ฝึกโมเดล YOLO...\"")
+            if self.fast_mode.get():
+                model = train_yolo(yaml_path, epochs=1, batch_size=1)
+                self.log_text.set("(\ _ /) \n(˶• ༝ •˶)  \n( > \"โหมดฝึกแบบเร็ว: ฝึกเสร็จแล้ว!\"")
+            else:
+                model = train_yolo(yaml_path, epochs=500, batch_size=4)  # ปรับ batch_size ให้เหมาะสมสำหรับ VRAM 8GB
+                self.log_text.set("(\ _ /) \n(˶• ༝ •˶)  \n( > \"ฝึกเสร็จแล้ว!\"")
 
             # Step 4: Evaluate model
             self.log_text.set("(\ _ /) \n(˶• ༝ •˶)  \n( > \"ขั้นตอนที่ 4: ประเมินผลโมเดล...\"")
-            model = YOLO("D:\\Python Code\\AI\\New folder\\best.pt")
             evaluate_model(model, yaml_path)
 
             # Step 5: Detect and Analyze test set
